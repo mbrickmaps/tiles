@@ -30,9 +30,9 @@ def ConvertTms(pasta):
             
             for x in contentx:
                 
-                if os.path.isdir(pasta + z + "/" + x):
+                if os.path.isdir(pasta + z + "\\" + x):
                     print 'X: ' + x
-                    os.chdir(pasta + z + "/" + x)
+                    os.chdir(pasta + z + "\\" + x)
                     
                     for png in sorted(glob.glob('*.png')):
                         ny = float(png.split('.')[0])
